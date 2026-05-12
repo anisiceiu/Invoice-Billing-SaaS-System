@@ -1,0 +1,86 @@
+<app-header/>
+<div class="container mt-5">
+<div class="container-fluid">
+
+  <!-- Page Header -->
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+      <h3 class="mb-0">Add Customer</h3>
+      <small class="text-muted">Create a new customer profile</small>
+    </div>
+
+    <a routerLink="/customers" class="btn btn-outline-secondary">
+      ← Back to Customers
+    </a>
+  </div>
+
+  <!-- Form Card -->
+  <div class="card shadow-sm border-0">
+    <div class="card-body p-4">
+
+      <form>
+
+        <div class="row g-3">
+
+          <!-- Name -->
+          <div class="col-md-6">
+            <label class="form-label">Full Name</label>
+            <input type="text" class="form-control" placeholder="Enter customer name">
+          </div>
+
+          <!-- Email -->
+          <div class="col-md-6">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" placeholder="customer@email.com">
+          </div>
+
+          <!-- Phone -->
+          <div class="col-md-6">
+            <label class="form-label">Phone</label>
+            <input type="text" class="form-control" placeholder="+8801XXXXXXXXX">
+          </div>
+
+          <!-- Company -->
+          <div class="col-md-6">
+            <label class="form-label">Company (Optional)</label>
+            <input type="text" class="form-control" placeholder="Company name">
+          </div>
+
+          <!-- Address -->
+          <div class="col-12">
+            <label class="form-label">Address</label>
+            <textarea class="form-control" rows="3" placeholder="Full address"></textarea>
+          </div>
+
+          <!-- Status -->
+          <div class="col-md-6">
+            <label class="form-label">Status</label>
+            <select class="form-select">
+              <option>Active</option>
+              <option>Inactive</option>
+            </select>
+          </div>
+
+        </div>
+
+        <!-- Actions -->
+        <div class="d-flex justify-content-end mt-4 gap-2">
+
+          <a routerLink="/customers" class="btn btn-light border">
+            Cancel
+          </a>
+
+          <button type="submit" class="btn btn-primary px-4">
+            Save Customer
+          </button>
+
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+
+</div>
+</div>
+<app-footer/>

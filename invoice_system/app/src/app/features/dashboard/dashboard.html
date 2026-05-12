@@ -1,0 +1,67 @@
+<app-header />
+<div class="container mt-5">
+    <h3 class="mb-4">Dashboard</h3>
+
+    <div class="row g-3">
+
+        <div class="col-md-3">
+            <div class="card shadow-sm p-3">
+                <h6>Total Invoices</h6>
+                <h3>120</h3>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm p-3">
+                <h6>Paid</h6>
+                <h3 class="text-success">85</h3>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm p-3">
+                <h6>Pending</h6>
+                <h3 class="text-warning">25</h3>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm p-3">
+                <h6>Revenue</h6>
+                <h3 class="text-primary">$12,500</h3>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Recent invoices -->
+    <div class="card mt-4">
+        <div class="card-header">Recent Invoices</div>
+        <div class="card-body">
+
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>#Invoice</th>
+                        <th>Customer</th>
+                        <th>Status</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>INV-1001</td>
+                        <td>ABC Ltd</td>
+                        <td><span class="badge bg-success">Paid</span></td>
+                        <td>$500</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </div>
+    </div>
+</div>
+
+<app-footer />

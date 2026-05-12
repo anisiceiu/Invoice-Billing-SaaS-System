@@ -1,0 +1,56 @@
+<app-header/>
+<div class="container mt-5">
+    
+
+<h3>Create Invoice</h3>
+
+<div class="row">
+
+  <div class="col-md-6">
+    <label>Customer</label>
+    <select class="form-control">
+      <option>Select Customer</option>
+    </select>
+  </div>
+
+  <div class="col-md-6">
+    <label>Invoice Date</label>
+    <input type="date" class="form-control">
+  </div>
+
+</div>
+
+<hr>
+
+<h5>Items</h5>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Qty</th>
+      <th>Price</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><input class="form-control"></td>
+      <td><input class="form-control" type="number"></td>
+      <td><input class="form-control" type="number"></td>
+      <td>$0</td>
+    </tr>
+  </tbody>
+</table>
+
+<button class="btn btn-secondary">+ Add Item</button>
+
+<hr>
+
+<div class="text-end">
+  <h4>Total: $0.00</h4>
+  <button class="btn btn-primary">Save Invoice</button>
+</div>
+</div>
+<app-footer/>
